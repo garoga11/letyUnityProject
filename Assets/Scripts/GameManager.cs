@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
 {
     public PlayerController playerController;
     public GameObject gameOverPanel;
-    public bool isGameOver = false;
     public Vector3 startingPosition;
 
     void Start(){
@@ -23,5 +22,13 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 0f; // pause the game
             gameOverPanel.SetActive(true); // show the Game Over panel
         }
+    }
+
+    public void RestartGame(){
+        playerController.transform.position = startingPosition;
+
+        gameOverPanel.SetActive(false);
+
+
     }
 }
