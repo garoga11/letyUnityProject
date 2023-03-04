@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
         score += points;
         Debug.Log("Score: " + score);
 
+
         speed += velocityIncreaseAmount; // increase speed by a certain amount
     }
 }

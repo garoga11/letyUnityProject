@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ObjectsHandler : MonoBehaviour
 {
 
@@ -9,6 +10,9 @@ public class ObjectsHandler : MonoBehaviour
     public int applePoints = 3;
     public int ratPoints = 20;
     public int lizardPoints = 50;
+    public float blurRadius = 10f;
+
+
 
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
@@ -39,4 +43,5 @@ public class ObjectsHandler : MonoBehaviour
             }
         }
     }
+
 }
