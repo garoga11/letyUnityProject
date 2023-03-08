@@ -49,7 +49,6 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        Debug.Log("Restarting Game");
         
         // Reload the current scene to restart the game
         Scene currentScene = SceneManager.GetActiveScene();
@@ -62,6 +61,7 @@ public class GameManager : MonoBehaviour
         // Unpause the game
         Time.timeScale = 1f;
 
+        Debug.Log("Restarting Game");
         //Reset score
         playerController.score = 0;
     }
